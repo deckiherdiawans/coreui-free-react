@@ -22,7 +22,7 @@ const AppBreadcrumb = () => {
         breadcrumbs.push({
           pathname: currentPathname,
           name: routeName,
-          active: index + 1 <= array.length ? true : false,
+          active: index + 1 === array.length ? true : false,
         })
       return currentPathname
     })
@@ -33,7 +33,7 @@ const AppBreadcrumb = () => {
 
   return (
     <CBreadcrumb className="m-0 ms-2">
-      {/* <CBreadcrumbItem href="/">Home</CBreadcrumbItem> */}
+      <CBreadcrumbItem href="/">Home</CBreadcrumbItem>
       {breadcrumbs.map((breadcrumb, index) => {
         return (
           <CBreadcrumbItem

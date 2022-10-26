@@ -31,11 +31,10 @@ const AppHeader = () => {
         >
           <CIcon icon={cilMenu} size="lg" />
         </CHeaderToggler>
-        <AppBreadcrumb />
-        {/* <CHeaderBrand className="mx-auto d-md-none" to="/">
+        <CHeaderBrand className="mx-auto d-md-none" to="/">
           <CIcon icon={logo} height={48} alt="Logo" />
-        </CHeaderBrand> */}
-        {/* <CHeaderNav className="d-none d-md-flex me-auto">
+        </CHeaderBrand>
+        <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
             <CNavLink to="/dashboard" component={NavLink}>
               Dashboard
@@ -67,12 +66,12 @@ const AppHeader = () => {
         </CHeaderNav>
         <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
-        </CHeaderNav> */}
+        </CHeaderNav>
       </CContainer>
-      {/* <CHeaderDivider />
+      <CHeaderDivider />
       <CContainer fluid>
         <AppBreadcrumb />
-      </CContainer> */}
+      </CContainer>
     </CHeader>
   )
 }
